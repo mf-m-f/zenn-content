@@ -1,7 +1,6 @@
 # zenn-content
 
-個人アカウント [`sas625efta`](https://github.com/sas625efta) 向けの Zenn 記事・Notebook リポジトリです。  
-（案件用 `cl_taiyo-yuden` とは別リポジトリ）
+個人アカウント [`sas625efta`](https://github.com/sas625efta) 向けの Zenn 記事・Notebook リポジトリです。
 
 ## 構成
 
