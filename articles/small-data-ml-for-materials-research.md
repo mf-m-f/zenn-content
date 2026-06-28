@@ -3,7 +3,7 @@ title: "小データでの機械学習——研究現場で使える現実的な
 emoji: "📊"
 type: "tech"
 topics: ["python", "機械学習", "材料"]
-published: false
+published: true
 ---
 
 ## はじめに：「精度が出ない」の前に確認すること
