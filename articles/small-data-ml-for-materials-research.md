@@ -18,7 +18,7 @@ published: false
 
 本記事では、材料・化学の実験データを小データで扱う際の**モデル選択・評価設計・不確実性の扱い・実験設計**について、実務的な視点で整理する。
 
-記事内の Python コードは説明用の断片です。デモデータ生成を含む実行可能版は GitHub の [code.ipynb](https://github.com/sas625efta/zenn-content/blob/main/notebooks/small-data-ml/code.ipynb) を参照。（[Colab で開く](https://colab.research.google.com/github/sas625efta/zenn-content/blob/main/notebooks/small-data-ml/code.ipynb)）
+記事内の Python コードは説明用の断片です。デモデータ生成を含む実行可能版は GitHub の [code.ipynb](https://github.com/mf-m-f/zenn-content/blob/main/notebooks/small-data-ml/code.ipynb) を参照。（[Colab で開く](https://colab.research.google.com/github/mf-m-f/zenn-content/blob/main/notebooks/small-data-ml/code.ipynb)）
 
 ---
 
@@ -132,7 +132,7 @@ print(pd.DataFrame(rows).to_string(index=False))
 
 **ポイント：** Random Forestは `max_depth=3` のように**深さを明示的に制限**する。制限しないと訓練データを記憶してLOOCV R² が見かけ上高くなる（Notebook では学習曲線で比較）。GPRは不確実性も同時に出力できるため、次節のベイズ最適化との相性が良い。
 
-LOOCV は n < 50 で特に有効だが、本記事のデモ（n = 80）でも動作確認に使っている。n = 50〜200 では Repeated 5-Fold CV の方が推定のばらつきを見やすい（セクション3の表参照）。実行可能な全文は [code.ipynb](https://github.com/sas625efta/zenn-content/blob/main/notebooks/small-data-ml/code.ipynb) を参照。
+LOOCV は n < 50 で特に有効だが、本記事のデモ（n = 80）でも動作確認に使っている。n = 50〜200 では Repeated 5-Fold CV の方が推定のばらつきを見やすい（セクション3の表参照）。実行可能な全文は [code.ipynb](https://github.com/mf-m-f/zenn-content/blob/main/notebooks/small-data-ml/code.ipynb) を参照。
 
 ---
 
@@ -276,7 +276,7 @@ plt.tight_layout()
 plt.show()
 ```
 
-[code.ipynb](https://github.com/sas625efta/zenn-content/blob/main/notebooks/small-data-ml/code.ipynb) では Ridge（適切な α）・Ridge（弱い正則化）・RF（`max_depth` なし）の3モデルを並べて比較している。過学習の違いを視覚的に確認したい場合はセクション5を参照。
+[code.ipynb](https://github.com/mf-m-f/zenn-content/blob/main/notebooks/small-data-ml/code.ipynb) では Ridge（適切な α）・Ridge（弱い正則化）・RF（`max_depth` なし）の3モデルを並べて比較している。過学習の違いを視覚的に確認したい場合はセクション5を参照。
 
 学習曲線の読み方：
 

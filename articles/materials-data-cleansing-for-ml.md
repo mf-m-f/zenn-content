@@ -17,7 +17,7 @@ published: false
 - **ノイズが多い**：測定機器の誤差、サンプルの不均一性、複数の実験室データの統合
 
 この環境では、欠損値・外れ値・単位の不統一といった「データの汚れ」がモデルの予測精度に直結する。本記事では、それぞれの問題に対して実務でどう判断し、どう対処するかを整理する。
-記事内の Python コードは説明用の断片です。デモデータ生成を含む実行可能版は GitHub の [code.ipynb](https://github.com/sas625efta/zenn-content/blob/main/notebooks/materials-data-cleansing/code.ipynb) を参照。（[Colab で開く](https://colab.research.google.com/github/sas625efta/zenn-content/blob/main/notebooks/materials-data-cleansing/code.ipynb)）
+記事内の Python コードは説明用の断片です。デモデータ生成を含む実行可能版は GitHub の [code.ipynb](https://github.com/mf-m-f/zenn-content/blob/main/notebooks/materials-data-cleansing/code.ipynb) を参照。（[Colab で開く](https://colab.research.google.com/github/mf-m-f/zenn-content/blob/main/notebooks/materials-data-cleansing/code.ipynb)）
 
 
 ---
