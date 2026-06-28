@@ -1,0 +1,20 @@
+# Career/Zenn 記事用 Python 環境
+# venv: ~/venvs/career-zenn
+# セットアップ:
+#   python3 -m venv ~/venvs/career-zenn
+#   ~/venvs/career-zenn/bin/pip install -r requirements.txt
+#   ~/venvs/career-zenn/bin/python -m ipykernel install --user --name career-zenn --display-name "Career Zenn"
+
+numpy==2.0.2
+pandas==2.3.3
+matplotlib==3.9.4
+seaborn==0.13.2
+scikit-learn==1.6.1
+feature-engine==1.9.4
+statsmodels==0.14.6
+pint==0.24.4
+pint-pandas==0.7.1
+ipykernel==6.31.0
+
+# オプション（SMILES 標準化など。pip では入りにくい場合あり）
+# rdkit  → conda install -c conda-forge rdkit
