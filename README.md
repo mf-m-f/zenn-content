@@ -1,42 +1,23 @@
 # zenn-content
 
-個人アカウント [`sas625efta`](https://github.com/sas625efta) 向けの Zenn 記事・Notebook リポジトリです。
+材料・化学 × 機械学習に関する [Zenn](https://zenn.dev) 記事と、記事で紹介するコードの Jupyter Notebook です。
 
-## 構成
+## 記事と Notebook
 
-```
-articles/     … Zenn 記事
-notebooks/    … 実行用 Jupyter Notebook
-requirements.txt
-```
+| 記事（`articles/`） | Notebook |
+|---------------------|----------|
+| 材料・化学の実験データをMLに使う前にやること | [`notebooks/materials-data-cleansing/code.ipynb`](notebooks/materials-data-cleansing/code.ipynb) |
+| 小データでの機械学習——研究現場で使える現実的な戦略 | [`notebooks/small-data-ml/code.ipynb`](notebooks/small-data-ml/code.ipynb) |
 
-## 執筆フロー
+記事本文は `articles/` 以下の Markdown です。Zenn への公開は GitHub 連携で行っています。
 
-1. Google Drive `Career/Zenn/` で下書き（`article.md`, `code.ipynb`, `research.md`）
-2. 完成したら本リポジトリへ複製
-3. `sas625efta/zenn-content` に push → Zenn GitHub 連携で公開
-
-`research.md` は Drive のみ（GitHub には載せない）。
-
-## 初回 push 手順
-
-GitHub で空リポジトリ `zenn-content` を **sas625efta** アカウントに作成してから:
+## Notebook の実行
 
 ```bash
-cd ~/GitHub/zenn-content
-git init
-git add .
-git commit -m "Initial commit: Zenn articles and notebooks"
-git branch -M main
-git remote add origin git@github.com:sas625efta/zenn-content.git
-git push -u origin main
+python3 -m venv .venv
+source .venv/bin/activate
+pip install -r requirements.txt
+jupyter notebook
 ```
 
-Zenn ダッシュボード → GitHub 連携 → `sas625efta/zenn-content` を選択。
-
-## Python 環境
-
-```bash
-python3 -m venv ~/venvs/career-zenn
-~/venvs/career-zenn/bin/pip install -r requirements.txt
-```
+各 Notebook はデモ用のサンプルデータを内部で生成するため、追加のデータファイルは不要です。
