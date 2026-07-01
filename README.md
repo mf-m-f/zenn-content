@@ -8,6 +8,7 @@
 |---------------------|----------|
 | 材料・化学の実験データをMLに使う前にやること | [`notebooks/materials-data-cleansing/code.ipynb`](notebooks/materials-data-cleansing/code.ipynb) |
 | 小データでの機械学習——研究現場で使える現実的な戦略 | [`notebooks/small-data-ml/code.ipynb`](notebooks/small-data-ml/code.ipynb) |
+| 材料・化学データでのSHAP解析と逆解析 | [`notebooks/shap-inverse-analysis/code.ipynb`](notebooks/shap-inverse-analysis/code.ipynb) |
 
 記事本文は `articles/` 以下の Markdown です。Zenn への公開は GitHub 連携で行っています。
 
