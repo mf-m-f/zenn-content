@@ -1,0 +1,35 @@
+{
+  "zenn_username": "efta1989",
+  "rules": [
+    "articles/ のファイル名（拡張子なし）= Zenn の slug = URL 末尾。変更・リネーム禁止。",
+    "Web エディタで公開済みの記事は、Zenn エクスポートのファイル名をそのまま使う。",
+    "新規記事だけ意味のある slug を付けてよい（例: shap-inverse-analysis-for-materials）。",
+    "article-manifest.json にない .md を articles/ に追加しない。"
+  ],
+  "articles": [
+    {
+      "slug": "e53a7b8fcd5ec6",
+      "title": "材料・化学の実験データをMLに使う前にやること——欠損・外れ値・単位不統一の実践的対処法",
+      "drive_dir": "260628_材料化学データクレンジング",
+      "notebook": "notebooks/materials-data-cleansing/code.ipynb",
+      "published": true,
+      "origin": "zenn_web"
+    },
+    {
+      "slug": "1166234e9506f7",
+      "title": "小データでの機械学習——研究現場で使える現実的な戦略",
+      "drive_dir": "260629_小データML",
+      "notebook": "notebooks/small-data-ml/code.ipynb",
+      "published": true,
+      "origin": "zenn_web"
+    },
+    {
+      "slug": "shap-inverse-analysis-for-materials",
+      "title": "材料・化学データでのSHAP解析と逆解析——モデルを信じる前に確認すること",
+      "drive_dir": "260630_SHAP逆解析",
+      "notebook": "notebooks/shap-inverse-analysis/code.ipynb",
+      "published": false,
+      "origin": "github"
+    }
+  ]
+}

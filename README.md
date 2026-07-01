@@ -1,16 +1,25 @@
 # zenn-content
 
-材料・化学 × 機械学習に関する [Zenn](https://zenn.dev) 記事と、記事で紹介するコードの Jupyter Notebook です。
+材料・化学 × 機械学習に関する [Zenn](https://zenn.dev/efta1989) 記事と、記事で紹介するコードの Jupyter Notebook です。
 
 ## 記事と Notebook
 
-| 記事（`articles/`） | Notebook |
-|---------------------|----------|
-| 材料・化学の実験データをMLに使う前にやること | [`notebooks/materials-data-cleansing/code.ipynb`](notebooks/materials-data-cleansing/code.ipynb) |
-| 小データでの機械学習——研究現場で使える現実的な戦略 | [`notebooks/small-data-ml/code.ipynb`](notebooks/small-data-ml/code.ipynb) |
-| 材料・化学データでのSHAP解析と逆解析 | [`notebooks/shap-inverse-analysis/code.ipynb`](notebooks/shap-inverse-analysis/code.ipynb) |
+| Zenn slug（`articles/` のファイル名） | 記事 | Notebook |
+|--------------------------------------|------|----------|
+| `e53a7b8fcd5ec6` | 材料・化学の実験データをMLに使う前にやること | [`notebooks/materials-data-cleansing/code.ipynb`](notebooks/materials-data-cleansing/code.ipynb) |
+| `1166234e9506f7` | 小データでの機械学習——研究現場で使える現実的な戦略 | [`notebooks/small-data-ml/code.ipynb`](notebooks/small-data-ml/code.ipynb) |
+| `shap-inverse-analysis-for-materials` | 材料・化学データでのSHAP解析と逆解析 | [`notebooks/shap-inverse-analysis/code.ipynb`](notebooks/shap-inverse-analysis/code.ipynb) |
 
-記事本文は `articles/` 以下の Markdown です。Zenn への公開は GitHub 連携で行っています。
+正本は [`article-manifest.json`](article-manifest.json) です。`articles/` に置ける Markdown はこの一覧だけに限定してください。
+
+## GitHub 連携の運用ルール
+
+1. **ファイル名 = slug = URL 末尾**（例: `1166234e9506f7.md` → `zenn.dev/efta1989/articles/1166234e9506f7`）
+2. **Web で既に公開した記事の slug は変更しない**（リネームすると別記事として重複する）
+3. **新規記事だけ**意味のある slug を付けてよい（SHAP 記事など）
+4. push 前に `python3 scripts/check_articles.py` で manifest と `articles/` の一致を確認する
+
+下書きの Drive 原稿は `Business/Career/Zenn/` に置き、公開用に整えてから `articles/{slug}.md` へ反映して push します。
 
 ## Notebook の実行
 
