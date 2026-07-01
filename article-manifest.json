@@ -28,7 +28,7 @@
       "title": "材料・化学データでのSHAP解析と逆解析——モデルを信じる前に確認すること",
       "drive_dir": "260630_SHAP逆解析",
       "notebook": "notebooks/shap-inverse-analysis/code.ipynb",
-      "published": false,
+      "published": true,
       "origin": "github"
     }
   ]
