@@ -9,6 +9,7 @@
 | `e53a7b8fcd5ec6` | 材料・化学の実験データをMLに使う前にやること | [`notebooks/materials-data-cleansing/code.ipynb`](notebooks/materials-data-cleansing/code.ipynb) |
 | `1166234e9506f7` | 小データでの機械学習——研究現場で使える現実的な戦略 | [`notebooks/small-data-ml/code.ipynb`](notebooks/small-data-ml/code.ipynb) |
 | `shap-inverse-analysis-for-materials` | 材料・化学データでのSHAP解析と逆解析 | [`notebooks/shap-inverse-analysis/code.ipynb`](notebooks/shap-inverse-analysis/code.ipynb) |
+| `target-variable-design-for-materials` | 材料・化学データの目的変数設計——対数変換バイアスと圧縮スコアの落とし穴 | [`notebooks/target-variable-design/code.ipynb`](notebooks/target-variable-design/code.ipynb) |
 
 正本は [`article-manifest.json`](article-manifest.json) です。`articles/` に置ける Markdown はこの一覧だけに限定してください。
 

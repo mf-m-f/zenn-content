@@ -30,6 +30,14 @@
       "notebook": "notebooks/shap-inverse-analysis/code.ipynb",
       "published": true,
       "origin": "github"
+    },
+    {
+      "slug": "target-variable-design-for-materials",
+      "title": "材料・化学データの目的変数設計——対数変換バイアスと圧縮スコアの落とし穴",
+      "drive_dir": "260702_目的変数設計",
+      "notebook": "notebooks/target-variable-design/code.ipynb",
+      "published": true,
+      "origin": "github"
     }
   ]
 }
