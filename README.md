@@ -19,6 +19,8 @@
 2. **Web で既に公開した記事の slug は変更しない**（リネームすると別記事として重複する）
 3. **新規記事だけ**意味のある slug を付けてよい（SHAP 記事など）
 4. push 前に `python3 scripts/check_articles.py` で manifest と `articles/` の一致を確認する
+5. push 前に `python3 scripts/check_notebooks.py` で notebook 出力にローカルパスが含まれていないか確認する
+6. notebook 実行時は先頭セルで `warnings.filterwarnings('ignore')` を使い、警告に絶対パスが出ないようにする
 
 下書きの Drive 原稿は `Business/Career/Zenn/` に置き、公開用に整えてから `articles/{slug}.md` へ反映して push します。
 
